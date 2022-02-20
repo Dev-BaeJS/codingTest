@@ -6,8 +6,11 @@ for i in range(N):
     sortedArray[int(sys.stdin.readline())] +=1
     
 for i in range(len(sortedArray)):
-    if sortedArray[i] > 0:
-        print('{}\n'.format(i)*sortedArray[i], end='')
+    if sortedArray[i] != 0:
+        for j in range(sortedArray[i]):
+            print(i)
+    # if sortedArray[i] > 0:
+    #     print('{}\n'.format(i)*sortedArray[i], end='')
 
 
 # 계수 정렬
